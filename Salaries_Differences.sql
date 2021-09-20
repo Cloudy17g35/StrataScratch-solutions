@@ -3,13 +3,17 @@
 --Tables: db_employee, db_dept
 
 SELECT
+
 (SELECT MAX(salary)
-FROM db_employee
-INNER JOIN db_dept
-ON db_employee.department_id = db_dept.id
-WHERE department = 'marketing')-
+   FROM db_employee
+  INNER JOIN db_dept
+     ON db_employee.department_id = db_dept.id
+   WHERE department = 'marketing')
+
+-
+
 (SELECT MAX(salary)
-FROM db_employee
-INNER JOIN db_dept
-ON db_employee.department_id = db_dept.id
+  FROM db_employee
+ INNER JOIN db_dept
+    ON db_employee.department_id = db_dept.id
 WHERE department = 'engineering') AS diff;
