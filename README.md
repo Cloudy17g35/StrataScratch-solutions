@@ -1,4 +1,4 @@
 # StrataScratch-solutions
 
-My code solutions 🪛 from StrataScratch
+My solutions 🪛 from StrataScratch
 Website link: https://platform.stratascratch.com
